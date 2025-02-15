@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>뽀삐</title>
+
+    <style>
+      .큰박스 {
+        display: flex;
+        border: solid 3px black;
+        width: 300px;
+        height: 300px;
+      }
+
+      .작은박스 {
+        width: 80px;
+        height: 80px;
+      }
+      .노란색 {
+        background-color: yellow;
+      }
+      .초록색 {
+        background-color: green;
+      }
+      .빨간색 {
+        background-color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="큰박스 노란색">
+      <div class="작은박스 노란색">1</div>
+      <div class="작은박스 초록색">2</div>
+      <div class="작은박스 빨간색">3</div>
+    </div>
+
+    <div
+      class="큰박스"
+      style="flex-direction: column; background-color: rgb(255, 255, 0)"
+    >
+      <div class="작은박스 노란색">1</div>
+      <div class="작은박스 초록색">2</div>
+      <div class="작은박스 빨간색">3</div>
+    </div>
+  </body>
+</html>
